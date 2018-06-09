@@ -1,6 +1,6 @@
 {% set name = "unyt" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "f412af58e8cdac7230c712b52eecf6d3e6356d6046b3b20b3cd0b1cff6f8824d" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "15c81723bde0dc22c9f79ea629b57885772cd167570a6e8365edd2b999623055" %}
 
 package:
   name: {{ name|lower }}
