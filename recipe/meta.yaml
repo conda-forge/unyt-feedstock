@@ -14,7 +14,7 @@ build:
   # we can enable this when we drop py27 or when conda-forge
   # lets you do this with optional py27 dependencies
   # noarch: python
-  number: 0
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
