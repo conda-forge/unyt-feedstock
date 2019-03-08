@@ -20,7 +20,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.5.0
     - numpy >=1.13.0
     - sympy
 
