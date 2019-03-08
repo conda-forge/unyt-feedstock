@@ -1,6 +1,6 @@
 {% set name = "unyt" %}
-{% set version = "1.0.7" %}
-{% set sha256 = "d616e9db66f21520cbf6a2a44c9994ea781b5c0774e463f71c41a6660fe15cfd" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "635d52685fe5f2327d5a232ed38811157b3a1dd686f5dc472c2c4ae6ff9d3aff" %}
 
 package:
   name: {{ name|lower }}
@@ -11,10 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  # we can enable this when we drop py27 or when conda-forge
-  # lets you do this with optional py27 dependencies
-  # noarch: python
-  number: 1000
+  noarch: python
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -25,8 +23,6 @@ requirements:
     - python
     - numpy >=1.13.0
     - sympy
-    - six
-    - backports.functools_lru_cache  # [py27]
 
 test:
   imports:
