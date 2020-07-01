@@ -1,6 +1,6 @@
 {% set name = "unyt" %}
-{% set version = "2.7.1" %}
-{% set sha256 = "ae45280849875638038bbe4bcf5b2c0f5d0621a3458f098ebbc575ed46b27f71" %}
+{% set version = "2.7.2" %}
+{% set sha256 = "498efe0c24c3b137ab6cf79e8abb5fa5297f76e882ef0ac99cdb57d0280d0a5e" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Handle, manipulate, and convert data with units in Python'
+  summary: Handle, manipulate, and convert data with units in Python
   doc_url: http://unyt.readthedocs.io/
   dev_url: https://github.com/yt-project/unyt
 
