@@ -5,7 +5,7 @@ Home: http://github.com/yt-project/unyt
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Handle, manipulate, and convert data with units in Python
 
