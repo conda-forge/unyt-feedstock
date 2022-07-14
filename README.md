@@ -117,4 +117,4 @@ Feedstock Maintainers
 =====================
 
 * [@ngoldbaum](https://github.com/ngoldbaum/)
-
+* [@jzuhone](https://github.com/jzuhone/)
