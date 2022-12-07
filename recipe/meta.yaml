@@ -1,6 +1,6 @@
 {% set name = "unyt" %}
-{% set version = "2.9.2" %}
-{% set sha256 = "8d4bf3dd3f7b4c29580728c0359caa17d62239673eeab436448d0777adeee5e1" %}
+{% set version = "2.9.3" %}
+{% set sha256 = "ad903c2b4546abd91d4746c9aea1556f58ee3592c5a0bd820d861d273027afed" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
