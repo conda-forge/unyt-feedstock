@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@jzuhone](https://github.com/jzuhone/)
+* [@neutrinoceros](https://github.com/neutrinoceros/)
 
