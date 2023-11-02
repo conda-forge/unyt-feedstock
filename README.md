@@ -1,11 +1,11 @@
-About unyt
-==========
+About unyt-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/unyt-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/yt-project/unyt
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/unyt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Handle, manipulate, and convert data with units in Python
 
