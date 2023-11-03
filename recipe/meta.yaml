@@ -12,17 +12,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8.0
+    - python >=3.9.0
     - pip
   run:
-    - python >=3.8.0
-    - numpy >=1.17.5
-    - sympy >=1.5
+    - python >=3.9.0
+    - numpy >=1.19.3
+    - sympy >=1.7
+    - packaging >=20.9
 
 test:
   imports:
