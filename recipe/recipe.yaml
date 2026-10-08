@@ -1,0 +1,59 @@
+schema_version: 1
+
+context:
+  name: unyt
+  version: "3.1.0"
+  sha256: 771582a87f1e521c9b62f7ca269b1965c0f77b479f7a063a51e8cef8b4cae51d
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: ${{ sha256 }}
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - flit-core >=3.11,<4
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.21.3
+    - sympy >=1.9.0
+    - packaging >=20.9
+
+tests:
+  - python:
+      imports:
+        - unyt
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - "pip show __RECIPE_MANAGER_SUBSTITUTION_MARKER__ | grep -Fx 'Version: ${{ name }}'"
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Handle, manipulate, and convert data with units in Python
+  homepage: http://github.com/yt-project/unyt
+  repository: https://github.com/yt-project/unyt
+  documentation: http://unyt.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - jzuhone
+    - ngoldbaum
+    - neutrinoceros
