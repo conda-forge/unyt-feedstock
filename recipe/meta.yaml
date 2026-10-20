@@ -19,12 +19,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - flit-core >=3.11,<4
+    - flit-core >=3.11,<5
   run:
     - python >={{ python_min }}
-    - numpy >=1.21.3
+    - numpy >=1.23.2,<3.0.0
     - sympy >=1.9.0
-    - packaging >=20.9
+    - packaging >=22.0
 
 test:
   imports:
